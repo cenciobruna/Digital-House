@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+        <h1>Formulário de Inscrição</h1>
+        <input type="text" name="nome" placeholder="informe o seu nome" value="" required />
+        <input type="email" name="email" placeholder="informe o seu email" value="" required />
+
+        <label>Futebol</label>
+        <input type="checkbox" name="hobbies" value="Futebol" />
+        <label>Dançar</label>
+        <input type="checkbox" name="hobbies" value="Dançar" />
+        <label>Programar</label>
+        <input type="checkbox" name="hobbies" value="Programar" />
+
+        <label>Solteiro</label>
+        <input type="radio" name="estado_civil" value="Solteiro" />
+        <label>Casado</label>
+        <input type="radio" name="estado_civil" value="Casado" />
+        <label>Divorciado</label>
+        <input type="radio" name="estado_civil" value="Divorciado" />
+
+        <input type="password" name="senha" placeholder="informe a sua senha" value="" required />
+
+        <select>
+            <optgroup label="Sul">
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="BA">Bahia</option>
+                <option value="PE">Pernambuco</option>
+            </optgroup>
+            <optgroup label="Norte">
+                <option value="PA">Pará</option>
+                <option value="AM">Amazonas</option>
+            </optgroup>
+        </select>
+
+        <label>Perfil</label>
+        <textarea placeholder="Perfil" name="Perfil" rows="5" cols="40" maxlength="100"></textarea>
+
+        <button type="submit" name="button_enviar">Enviar</button>
+        <button type="reset" name="button_excluir">Excluir</button>
+        <button type="button" name="button_botao">Outra Ação</button>
+
+    </form>
+    </body>
+</html>
